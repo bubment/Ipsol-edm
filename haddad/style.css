@@ -1,0 +1,37 @@
+body {height: 100%; margin: 0;}
+
+.parallelogram-container
+{
+    border: 1px solid red;
+    width: 536px;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.parallelogram 
+{
+    width: 400px;
+    height: 700px;
+    transform: skew(-10.2deg);
+    border-left: 10px solid red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paral-img
+{
+    margin-left: 5px;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.paral-text1
+{
+    position: relative;
+}

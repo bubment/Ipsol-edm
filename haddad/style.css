@@ -3,6 +3,7 @@ body{
     margin: 0;
     overflow-x: hidden;
     font-family: Sansation;
+    background-color: #e8e8e8;
 }
 
 @font-face{
@@ -20,23 +21,17 @@ body{
     color: #0a2004;
     font-weight: bold;
     font-size: 50px;
-    padding-left: 30px;
-    box-shadow: 0 0 6px rgba(0,0,0,0.06), 0 6px 6px rgba(0,0,0,0.04);
+    box-shadow: 0 0 6px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1);
 }
 
 .content{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.parallelogram-container{
-    /* border: 1px solid red; */
-    width: 402px;
-}
-
-.min-w-402{
+.paral{
     min-width: 402px;
     max-width: 402px;
     padding: 0;
@@ -71,12 +66,24 @@ body{
     bottom: 0;
     width: 100%;
     background-color: #fff;
-    height: 70px;
     color: #0a2004;
     font-size: 20px;
-    padding: 15px;
+    padding: 10px 0;
     box-shadow: 0 0 6px rgba(0,0,0,0.06), 0 6px 6px rgba(0,0,0,0.04);
 }
-span{
+
+.pl-30{
     padding-left: 30px;
+}
+
+.icons{
+    height: 24px;
+}
+
+.link{
+    color:#0a2004;
+}
+
+.link:hover{
+    color: #7dbd07;
 }

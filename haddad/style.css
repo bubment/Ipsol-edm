@@ -52,7 +52,27 @@ body{
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(10,32,4,0.4);
+    transition: background-color 0.3s ease-out;
 }
+
+.parallelogram:hover 
+    {
+        background-color: rgba(10, 32, 4, 0.6);
+        cursor: pointer;
+    }
+
+  /* Ha a trapézon lévő szövegekre visszük az egeret akkor is megtörténik a trapézra vonatkozó hover esemény */
+  .paral-text1:hover ~ .parallelogram 
+    {
+        background-color: rgba(10, 32, 4, 0.6);
+        cursor: pointer;
+    }
+
+.paral-text2:hover ~ .parallelogram 
+    {
+        background-color: rgba(10, 32, 4, 0.6);
+        cursor: pointer;
+    }
 
 .paral-img{
     position: absolute;
@@ -62,10 +82,145 @@ body{
     height: 525px;
 }
 
-.paral-text1{
-    position: relative;
-}
+.paral-text1
+    {
+        border-top: 5px solid white;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        left: 80px;
+        top: 190px;
+        z-index: 3;
+    }
 
+    .paral-text2
+    {
+        border-bottom: 5px solid white;
+        border-radius: 5px;
+        padding-right: 5px;
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        right: 75px;
+        top: 260px;
+        text-align: right;
+        z-index: 3;
+    }
+
+    .paral-text3
+    {
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        position: absolute;
+        top: 400px;
+        left: 60px;
+        width: 225px;
+        z-index: 3;
+        display: none;
+    }
+
+    .parallelogram:hover ~ .paral-text3{
+        display: block;
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.3s;
+        -moz-animation-duration: 0.3s;
+        -o-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        -o-animation-duration:0.3s;
+        animation-delay: 0.3s;
+    }
+    
+    .paral-text1:hover ~ .paral-text3{
+        display: block;
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.3s;
+        -moz-animation-duration: 0.3s;
+        -o-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        -o-animation-duration:0.3s;
+        animation-delay: 0.3s;
+    }
+    
+    .paral-text2:hover ~ .paral-text3{
+        display: block;
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.3s;
+        -moz-animation-duration: 0.3s;
+        -o-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        -o-animation-duration:0.3s;
+        animation-delay: 0.3s;
+    }
+    
+    .paral-text3:hover
+    {
+        display: block;
+        -webkit-animation-name: fadeInLeft;
+        -moz-animation-name: fadeInLeft;
+        -o-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.3s;
+        -moz-animation-duration: 0.3s;
+        -o-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        -o-animation-duration:0.3s;
+        animation-delay: 0.3s;
+    }
+    
+    @keyframes fadeInLeft {
+        from {
+            opacity:0;
+            -webkit-transform: translatex(-10px);
+            -moz-transform: translatex(-10px);
+            -o-transform: translatex(-10px);
+            transform: translatex(-10px);
+        }
+        to {
+            opacity:1;
+            -webkit-transform: translatex(0);
+            -moz-transform: translatex(0);
+            -o-transform: translatex(0);
+            transform: translatex(0);
+        }
+    }
 .footer{
     position: absolute;
     bottom: 0;
